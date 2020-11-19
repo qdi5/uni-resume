@@ -26,133 +26,139 @@
 					<swiper-item>
 						<view class="swiper-item uni-bg-green base-info">
 							<scroll-view scroll-y="true" class="scroll-Y" :style="{height: windowHeight + 'px'}">
-								<view class="area">
-									<view class="theme d-flex horizontal v-center">
-										<text class="number">1</text>基本资料
-									</view>
-									<view class="row d-flex dashed-border horizontal justify fill">
-										<view class="left fill">
-											<text class="label">姓名：</text>
-											<text class="item">{{ resume.name }}</text>
+								<div class="content-wrapper">
+									<view class="area">
+										<view class="theme d-flex horizontal v-center">
+											<text class="number">1</text>基本资料
 										</view>
-										<view class="right fill">
-											<text class="label">电话：</text>
-											<text class="item">{{ resume.tel }}</text>
+										<view class="row d-flex dashed-border horizontal justify fill">
+											<view class="left fill">
+												<text class="label">姓名：</text>
+												<text class="item">{{ resume.name }}</text>
+											</view>
+											<view class="right fill">
+												<text class="label">电话：</text>
+												<text class="item">{{ resume.tel }}</text>
+											</view>
 										</view>
-									</view>
-									<view class="row d-flex dashed-border horizontal justify">
-										<view class="left fill">
-											<text class="label">性别：</text>
-											<text class="item">{{ resume.sex }}</text>
+										<view class="row d-flex dashed-border horizontal justify">
+											<view class="left fill">
+												<text class="label">性别：</text>
+												<text class="item">{{ resume.sex }}</text>
+											</view>
+											<view class="right fill">
+												<text class="label">年龄：</text>
+												<text class="item">{{ resume.age }}</text>
+											</view>
 										</view>
-										<view class="right fill">
-											<text class="label">年龄：</text>
-											<text class="item">{{ resume.age }}</text>
-										</view>
-									</view>
-									<view class="row dashed-border">
-										<view class="left">
-											<text class="label">邮箱：</text>
-											<text class="item">{{ resume.email }}</text>
-										</view>
-									</view>
-									<view class="row dashed-border">
-										<view class="left">
-											<text class="label">住址：</text>
-											<text class="item">{{ resume.address }}</text>
-										</view>
-									</view>
-								</view>
-								<view class="area">
-									<view class="theme d-flex horizontal v-center">
-										<text class="number">2</text>主要技能
-									</view>
-									<view class="uni-padding-wrap uni-common-mt">
-										<view class="progress-box" v-for="(skill, index) in resume.skill" :key="index">
-											{{ skill.name }}
-											<progress :percent="skill.percent" show-info stroke-width="10" />
-										</view>
-									</view>
-								</view>
-								<view class="area">
-									<view class="theme d-flex horizontal v-center">
-										<text class="number">3</text>教育经历
-									</view>
-									<view class="edu-wrapper" :class="{'dashed-border': index < resume.education.length - 1}" v-for="(edu, index) in resume.education" :key="index">
-										<view class="school">
-											<image class="school-img" src="../../static/icon_school.png" mode="widthFix"></image>
-											{{ edu.school }}
-										</view>
-										<view class="content d-flex horizontal justify v-center">
+										<view class="row dashed-border">
 											<view class="left">
-												<image class="comm-img" src="../../static/icon_book.png" mode="widthFix"></image>
-												{{ edu.major }}
-											</view>
-											<view class="right">
-												<image class="comm-img" src="../../static/icon_calendar.png" mode="widthFix"></image>
-												{{ edu.year }}
+												<text class="label">邮箱：</text>
+												<text class="item">{{ resume.email }}</text>
 											</view>
 										</view>
-										<rich-text class="desc">
-											{{ edu.desc }}
-										</rich-text>
-									</view>
-								</view>
-								<view class="page">1/4</view>
-							</scroll-view>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="swiper-item uni-bg-blue base-info">
-							<scroll-view scroll-y="true" class="scroll-Y" :style="{height: windowHeight + 'px'}">
-								<view class="area">
-									<view class="theme d-flex horizontal v-center">
-										<text class="number">4</text>工作经历
-									</view>
-									<view class="edu-wrapper" :class="{'dashed-border': index < resume.work.length - 1}" v-for="(work, index) in resume.work" :key="index">
-										<view class="school">
-											<image class="school-img" src="../../static/icon_company.png" mode="widthFix"></image>
-											{{ work.company }}
-										</view>
-										<view class="content d-flex horizontal justify v-center">
+										<view class="row dashed-border">
 											<view class="left">
-												<image class="comm-img" src="../../static/icon_job.png" mode="widthFix"></image>
-												{{ work.job }}
-											</view>
-											<view class="right">
-												<image class="comm-img" src="../../static/icon_calendar.png" mode="widthFix"></image>
-												{{ work.year }}
+												<text class="label">住址：</text>
+												<text class="item">{{ resume.address }}</text>
 											</view>
 										</view>
-										<rich-text class="desc">
-											{{ work.desc }}
-										</rich-text>
 									</view>
-								</view>
-								<view class="page">2/4</view>
-							</scroll-view>
-						</view>
-					</swiper-item>
-					<swiper-item>
-						<view class="swiper-item uni-bg-blue base-info">
-							<scroll-view scroll-y="true" class="scroll-Y" :style="{height: windowHeight + 'px'}">
-								<view class="area">
-									<view class="theme d-flex horizontal v-center">
-										<text class="number">5</text>项目经历
-									</view>
-									<view class="edu-wrapper" :class="{'dashed-border': index < resume.project.length - 1}" v-for="(project, index) in resume.project" :key="index">
-										<view class="school">
-											<image class="school-img" src="../../static/icon_computer.png" mode="widthFix"></image>
-											{{ project.name }}
+									<view class="area">
+										<view class="theme d-flex horizontal v-center">
+											<text class="number">2</text>主要技能
 										</view>
-										<view>
+										<view class="uni-padding-wrap uni-common-mt">
+											<view class="progress-box" v-for="(skill, index) in resume.skill" :key="index">
+												{{ skill.name }}
+												<progress :percent="skill.percent" show-info stroke-width="10" />
+											</view>
+										</view>
+									</view>
+									<view class="area">
+										<view class="theme d-flex horizontal v-center">
+											<text class="number">3</text>教育经历
+										</view>
+										<view class="edu-wrapper" :class="{'dashed-border': index < resume.education.length - 1}" v-for="(edu, index) in resume.education" :key="index">
+											<view class="school">
+												<image class="school-img" src="../../static/icon_school.png" mode="widthFix"></image>
+												{{ edu.school }}
+											</view>
+											<view class="content d-flex horizontal justify v-center">
+												<view class="left">
+													<image class="comm-img" src="../../static/icon_book.png" mode="widthFix"></image>
+													{{ edu.major }}
+												</view>
+												<view class="right">
+													<image class="comm-img" src="../../static/icon_calendar.png" mode="widthFix"></image>
+													{{ edu.year }}
+												</view>
+											</view>
 											<rich-text class="desc">
-												{{ project.desc }}
+												{{ edu.desc }}
 											</rich-text>
 										</view>
 									</view>
-								</view>
-								<view class="page">3/4</view>
+									<view class="page">1/4</view>
+								</div>
+							</scroll-view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item uni-bg-blue base-info">
+							<scroll-view scroll-y="true" class="scroll-Y" :style="{height: windowHeight + 'px'}">
+								<div class="content-wrapper">
+									<view class="area">
+										<view class="theme d-flex horizontal v-center">
+											<text class="number">4</text>工作经历
+										</view>
+										<view class="edu-wrapper" :class="{'dashed-border': index < resume.work.length - 1}" v-for="(work, index) in resume.work" :key="index">
+											<view class="school">
+												<image class="school-img" src="../../static/icon_company.png" mode="widthFix"></image>
+												{{ work.company }}
+											</view>
+											<view class="content d-flex horizontal justify v-center">
+												<view class="left">
+													<image class="comm-img" src="../../static/icon_job.png" mode="widthFix"></image>
+													{{ work.job }}
+												</view>
+												<view class="right">
+													<image class="comm-img" src="../../static/icon_calendar.png" mode="widthFix"></image>
+													{{ work.year }}
+												</view>
+											</view>
+											<rich-text class="desc">
+												{{ work.desc }}
+											</rich-text>
+										</view>
+									</view>
+									<view class="page">2/4</view>
+								</div>
+							</scroll-view>
+						</view>
+					</swiper-item>
+					<swiper-item>
+						<view class="swiper-item uni-bg-blue base-info">
+							<scroll-view scroll-y="true" class="scroll-Y" :style="{height: windowHeight + 'px'}">
+								<div class="content-wrapper">
+									<view class="area">
+										<view class="theme d-flex horizontal v-center">
+											<text class="number">5</text>项目经历
+										</view>
+										<view class="edu-wrapper" :class="{'dashed-border': index < resume.project.length - 1}" v-for="(project, index) in resume.project" :key="index">
+											<view class="school">
+												<image class="school-img" src="../../static/icon_computer.png" mode="widthFix"></image>
+												{{ project.name }}
+											</view>
+											<view>
+												<rich-text class="desc">
+													{{ project.desc }}
+												</rich-text>
+											</view>
+										</view>
+									</view>
+									<view class="page">3/4</view>
+								</div>
 							</scroll-view>
 						</view>
 					</swiper-item>
@@ -387,7 +393,6 @@
 	border-bottom: dashed 1px #333;
 }
 .base-info {
-	padding: 0 20px;
 	.area {
 		margin-bottom: 30px;
 	}
@@ -397,6 +402,9 @@
 			text-align: left;
 		}
 	}
+}
+.content-wrapper {
+	padding: 0 20px;
 }
 .theme {
 	margin: 10px 0;
