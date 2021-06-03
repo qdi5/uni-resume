@@ -99,7 +99,7 @@
 											</rich-text>
 										</view>
 									</view>
-									<view class="page">1/4</view>
+									<view class="page">1/3</view>
 								</div>
 							</scroll-view>
 						</view>
@@ -132,7 +132,7 @@
 											</rich-text>
 										</view>
 									</view>
-									<view class="page">2/4</view>
+									<view class="page">2/3</view>
 								</div>
 							</scroll-view>
 						</view>
@@ -157,12 +157,12 @@
 											</view>
 										</view>
 									</view>
-									<view class="page">3/4</view>
+									<view class="page">3/3</view>
 								</div>
 							</scroll-view>
 						</view>
 					</swiper-item>
-					<swiper-item>
+					<!-- <swiper-item>
 						<view class="swiper-item uni-bg-blue">
 							<view class="swiper-item uni-bg-blue base-info">
 								<view class="area">
@@ -178,7 +178,7 @@
 							</view>
 						</view>
 						<view class="page">4/4</view>
-					</swiper-item>
+					</swiper-item> -->
 				</swiper>
 			</view>
 		</view>
@@ -194,62 +194,69 @@
 				  name:"吴哲",
 				  spell:"Wu Zhe",
 				  job:"WEB前端工程师",
-				  exp:"3年工作经验",
+				  exp:"5年工作经验",
 				  tel: "18588750850",
 				  sex: "男",
-				  age: 27,
-				  email: "wuzhe_@aliyun.com",
-				  address: "深圳市福田区上沙街道龙秋路5巷24号",
+				  age: 28,
+				  email: "ahafe@wo.cn",
+				  address: "深圳市福田区沙头街道上沙龙秋村",
 				  skill:[
-				    { name: "Java", percent:85},
-				    { name: "PHP", percent: 40 },
-				    { name: "HTML/CSS/JavaScript", percent: 90 },
-				    { name: "Python", percent: 70 },
-				    { name: "大数据", percent: 60 }
+				    { name: "Vue", percent: 85 },
+				    { name: "HTML/CSS/JavaScript/jQuery", percent: 80 },
+                    { name: "Webpack", percent: 65 },
+				    { name: "Node", percent: 60 },
+				    { name: "MySql", percent: 50 }
 				  ],
 				  education:[
 				    {
 				      school:"荆州职业技术学院",
-				      major:"软件工程",
-				      year:"2014-2018",
-				      desc:"本专业培养掌握计算机软件基本理论知识，熟悉软件开发和管理技术、能够在计算机软件领域中从事软件设计、开发和管理的高级人才。"
+				      major:"国际信息技术",
+				      year:"2012-2015",
+				      desc:"软件技术专业，Java Web方向。"
 				    }
 				  ],
 				  work:[
 				    {
-				      company:"北京XX公司",
-				      job:"程序员",
-				      year:"2019/01-至今",
-				      desc:"参与开发了XXX电商系统，担任程序员角色。主要的工作是负责广告投放、商品秒杀、商品拼团等模块的开发与维护，并且负责管理该项目的运维工作。"
+				      company:"深圳市窝库新实业有限公司",
+				      job:"前端开发工程师",
+				      year:"2019/05-至今",
+				      desc:"负责公司的app、ERP、微信公众号和小程序的开发。"
 				    },
 				    {
-				      company: "北京XX公司",
-				      job: "实习生",
-				      year: "2018/03-2019/01",
-				      desc: "参与了K13在线教育系统的开发和测试，维护腾讯云点播的API接口调用，并实现在线转码、添加水印、防盗链和盗播，并且开发和维护K13教育的微信小程序"
+				      company: "深圳市畅飞扬信息系统有限公司",
+				      job: "前端开发工程师",
+				      year: "2018/03-2019/04",
+				      desc: "参与公司电子档案管理系统开发"
 				    },
 				    {
-				      company: "北京航空航天大学创客学院",
-				      job: "项目组长",
-				      year: "2017/05-2018/01",
-				      desc: "参与本校创新学院的Litemall微商城系统的开发，担任项目组长职务，参与了商品管理、订单管理、微信支付、购物车等模块的设计与开发。"
+				      company: "广州聚超软件科技有限公司",
+				      job: "前端开发工程师",
+				      year: "2015/08-2017/06",
+				      desc: "参与公司物料管理系统开发"
 				    }
 				  ],
 				  project:[
 				    {
-				      name:"XXX电商系统",
-				      desc:"该电商系统是O2O类型的新零售电商系统，分为购物子系统、支付子系统、数据库子系统、安全子系统、库存子系统、物流子系统和财务子系统。核心架构采用了SpringCloud微服务架构，整合了上述若干子系统。技术栈包括了SpringMVC、MyBatis、Activiti、Shiro、QuartZ、Sculptor Boot、jabdp、jee-weapp、RocketMQ、Kafka、Selenium、Echart、Vue、Element-UI、Uni-APP、Swagger、ElasticSearch、Druid、Zookeeper，数据平台选择的是两种MySQL集群（Replication、PXC），由MyCat管理，同时对MyCat做双机热备。NoSQL采用的是Redis Cluster集群和MongoDB集群"
+				      name:"窝库APP",
+				      desc:"这是一个租房类的混合app，主要功能有实名认证、预约看房、在线签约、在线支付，维修保洁、智能门锁。"
 				    },
 				    {
-				      name:"XXX K13在线教育系统",
-				      desc:"该系统是针对中小学生提供的K13在线教育系统，采用的是视频点播形式，分为B/S形式和C/S形式。我主要负责的是教学视频管理业务。授课教师向K13平台上传教学视频后，经过专业人员剪辑之后，由K13平台调用腾讯云点播API接口，来实现在线转码和压缩，并且添加水印，最后生成防盗播的URL路径，渲染到HTML网页或者APP上面。该系统使用的技术栈包括SpringBoot、SpringMVC、MyBatis、SpringSecurity、Kafka、QuartZ、Flowable，该系统最终部署在腾讯云平台。"
+				      name:"窝库管家",
+				      desc:"这是一个h5 webapp项目，在微信公众号与小程序里面使用。主要是公司的业务员使用，方便管理我司的所有合同，根据公司的业务发展开发对应的功能模块提升业务员的工作效率。主要模块有合同签约、实名审核、电子收据、窝库服务；"
 				    },
 				    {
-				      name:"北京航空航天大学创客学院",
-				      desc:"Litemall微商城系统是本校创新学院联合北京XX商超集团联合打造的B2C电商系统，该系统采用前后端分离的架构设计，一共分为5个子系统，分别是微商城前后台系统、商城管理前后台系统、商城核心系统。业务上具备微商城所有的功能，包括微信支付。技术架构上面后台项目选择的SpringBoot、SpringMVC和MyBatis组成的SSM框架，并且融合了Shiro、Swagger、PowerMock、阿里云等技术。前端项目采用了VUE+ElementUI技术架构，小程序采用的微信原生框架。Litemall微商城采用分布式集群部署，发布在DockerSwarm环境中，并且实现高负载、高性能和高可用。"
-				    }
-				  ],
-				  introduction:"本人性格开朗、稳重、有活力，待人热情、真诚；对待工作认真负责，善于沟通、协调有较强的组织能力与团队精神；上进心强、勤于学习能不断提高自身的能力与综合素质。在未来的工作中，我将以充沛的精力，刻苦钻研的精神来努力工作，稳定地提高自己的工作能力，与企业同步发展。"
+				      name:"窝库ERP",
+				      desc:"这是公司PC端的内部管理系统；主要功能有房源管理、合同管理、财务管理、账单管理、智能门锁管理。"
+				    },
+                    {
+                      name:"Express博客",
+                      desc:"独立实现一个前后端分离的博客项目；主要功能有第三方登录、博客管理、分享、评论和回复。使用的技术栈：Express + Vue + MySQL"
+                    },
+                    {
+                      name:"Vue音乐播放器",
+                      desc:"高仿慕课网明星项目音乐Web app；无UI框架，纯手写css、js；核心功能有歌曲播放、歌词同步，快进快退等等。"
+                    }
+				  ]
 				}
 			}
 		},
@@ -405,6 +412,10 @@
 }
 .content-wrapper {
 	padding: 0 20px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .theme {
 	margin: 10px 0;
